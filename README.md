@@ -28,6 +28,6 @@ npm run preview
 ## Notes
 
 - The contact form is intentionally local-only. It prevents submission and shows local confirmation feedback.
-- Official contact details are `info@auralivingva.com`, `+1 703-828-4040`, and `3470 Grambell Ct, Woodbridge, Virginia 22192, USA`.
+- Official contact details are `info@auralivingva.com`, `+1 703-828-4040`, and `Woodbridge, Virginia, USA`.
 - No secrets, backend, production form handling, SMS activation, DNS configuration, hosting configuration, or domain deployment is included.
 - `public/robots.txt` and `public/sitemap.xml` provide a basic static setup for `https://auralivingva.com/`.

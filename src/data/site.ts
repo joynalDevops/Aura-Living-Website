@@ -4,7 +4,7 @@ export const site = {
   url: 'https://auralivingva.com',
   email: 'info@auralivingva.com',
   serviceArea: 'Virginia property management',
-  address: '3470 Grambell Ct, Woodbridge, Virginia 22192, USA',
+  address: 'Woodbridge, Virginia, USA',
   phone: '+1 703-828-4040',
   logo: '/Aura_Living_Logo_New.png'
 };
