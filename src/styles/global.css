@@ -149,7 +149,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .consent input { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--teal); }
 .form-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 17px; margin-top: 22px; }
 .form-status { color: var(--teal); font-size: .88rem; font-weight: 700; }
-.demo-note { padding: 13px 16px; border-left: 3px solid var(--gold); background: #f4ecd9; color: var(--ink-soft); font-size: .86rem; }
+.inquiry-note { padding: 13px 16px; border-left: 3px solid var(--gold); background: #f4ecd9; color: var(--ink-soft); font-size: .86rem; }
 
 .site-footer { padding: 65px 0 20px; background: var(--ink); color: #fffdf9; }
 .footer-grid { display: grid; gap: 36px; padding-bottom: 48px; }

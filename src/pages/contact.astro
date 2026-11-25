@@ -9,7 +9,7 @@ import { site } from '../data/site';
     <div class="container contact-grid">
       <div class="contact-detail">
         <h2>We are listening.</h2>
-        <p>Share a little context and we can better understand what would be useful. The details below are editable demo placeholders until the business confirms final contact information.</p>
+        <p>Share a little context and we can better understand what would be useful. The details below are placeholders until the business confirms final contact information.</p>
         <dl class="detail-list">
           <div><dt>Email</dt><dd><a href={`mailto:${site.email}`}>{site.email}</a></dd></div>
           <div><dt>Phone</dt><dd>{site.phone} <small>(placeholder)</small></dd></div>
@@ -17,8 +17,8 @@ import { site } from '../data/site';
         </dl>
       </div>
       <div class="contact-form">
-        <div class="demo-note" role="note">Demo only: this form does not submit or send messages. The button shows local feedback so the flow can be reviewed before a production form or backend is added.</div>
-        <form id="demo-contact-form">
+        <div class="inquiry-note" role="note">This form stays on this page and does not send messages. To contact Aura Living, use the email address listed here.</div>
+        <form id="inquiry-form">
           <div class="form-grid">
             <div class="form-field"><label for="name">Name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" required /></div>
             <div class="form-field"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required /></div>
@@ -27,17 +27,17 @@ import { site } from '../data/site';
             <div class="form-field full"><label for="message">Message <span aria-hidden="true">*</span></label><textarea id="message" name="message" required></textarea></div>
           </div>
           <label class="consent" for="sms-consent"><input id="sms-consent" name="sms-consent" type="checkbox" /><span>I agree to receive occasional one-to-one SMS messages from Aura Living about property support. Consent is optional and is not a condition of service. Message and data rates may apply. See the <a href="/sms-terms/">SMS Terms</a>.</span></label>
-          <div class="form-actions"><button class="button" type="submit">Show demo confirmation</button><span id="form-status" class="form-status" role="status" aria-live="polite"></span></div>
+          <div class="form-actions"><button class="button" type="submit">Review inquiry</button><span id="form-status" class="form-status" role="status" aria-live="polite"></span></div>
         </form>
       </div>
     </div>
   </section>
 </BaseLayout>
 <script>
-  const form = document.querySelector<HTMLFormElement>('#demo-contact-form');
+  const form = document.querySelector<HTMLFormElement>('#inquiry-form');
   const status = document.querySelector<HTMLElement>('#form-status');
   form?.addEventListener('submit', (event) => {
     event.preventDefault();
-    if (status) status.textContent = 'Demo received locally. No message was sent.';
+    if (status) status.textContent = 'Your inquiry is ready to review on this page. No message was sent.';
   });
 </script>
