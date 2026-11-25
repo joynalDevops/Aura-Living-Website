@@ -34,17 +34,18 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .skip-link:focus { transform: translateY(0); }
 
 .site-header { position: relative; z-index: 5; background: rgba(250, 247, 240, .93); border-bottom: 1px solid rgba(16, 45, 61, .08); backdrop-filter: blur(12px); }
-.header-inner { min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.header-inner { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-size: 1.12rem; letter-spacing: .01em; }
 .brand:hover { color: var(--ink); }
-.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px; background: var(--ink); color: var(--gold-soft); font-family: Georgia, serif; font-size: 1.25rem; font-weight: 700; }
+.brand-logo { width: clamp(64px, 8vw, 88px); height: auto; aspect-ratio: 1; object-fit: contain; flex: 0 0 auto; }
+.brand-light .brand-logo { border-radius: 11px; background: var(--paper); }
 .brand-name strong { font-weight: 760; }
 .site-nav { display: none; align-items: center; gap: 26px; font-size: .9rem; font-weight: 650; }
 .site-nav a { text-decoration: none; }
 .site-nav a:not(.button):hover { color: var(--teal); }
 .menu-toggle { display: grid; gap: 5px; width: 42px; height: 42px; place-content: center; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--ink); cursor: pointer; }
 .menu-toggle > span:not(.sr-only) { display: block; width: 19px; height: 2px; background: currentColor; }
-.site-nav.is-open { position: absolute; top: 79px; left: 0; right: 0; display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 16px 20px 22px; border-bottom: 1px solid var(--line); background: var(--ivory); box-shadow: var(--shadow); }
+.site-nav.is-open { position: absolute; top: 87px; left: 0; right: 0; display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 16px 20px 22px; border-bottom: 1px solid var(--line); background: var(--ivory); box-shadow: var(--shadow); }
 .site-nav.is-open a { padding: 11px 0; }
 .site-nav.is-open .button { text-align: center; margin-top: 8px; }
 

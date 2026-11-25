@@ -1,11 +1,11 @@
 ---
-import { navItems } from '../data/site';
+import { navItems, site } from '../data/site';
 ---
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/" aria-label="Aura Living home">
-      <span class="brand-mark" aria-hidden="true">A</span>
-      <span class="brand-name">Aura <strong>Living</strong></span>
+    <a class="brand" href="/" aria-label={`${site.name} home`}>
+      <img class="brand-logo" src={site.logo} alt={`${site.name} official logo`} width="88" height="88" />
+      <span class="brand-name">Aura <strong>Living LLC</strong></span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
       <span class="sr-only">Toggle navigation</span>

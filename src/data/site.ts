@@ -1,10 +1,12 @@
 export const site = {
-  name: 'Aura Living',
+  name: 'Aura Living LLC',
   domain: 'auralivingva.com',
-  email: 'hello@auralivingva.com',
-  serviceArea: 'Virginia service',
-  address: 'Street address coming soon',
-  phone: '+1 703-828-4040'
+  url: 'https://auralivingva.com',
+  email: 'info@auralivingva.com',
+  serviceArea: 'Virginia property management',
+  address: '3470 Grambell Ct, Woodbridge, Virginia 22192, USA',
+  phone: '+1 703-828-4040',
+  logo: '/Aura_Living_Logo_New.png'
 };
 
 export const navItems = [

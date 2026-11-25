@@ -1,6 +1,6 @@
-# Aura Living website
+# Aura Living LLC website
 
-A local website for Aura Living, a Virginia residential property management and resident support concept. This project uses Astro, plain CSS, and local SVG artwork. It has no backend and makes no runtime API calls.
+A local static website for Aura Living LLC, a Virginia residential and commercial property management company. This project uses Astro, plain CSS, and local SVG artwork. It has no backend and makes no runtime API calls.
 
 ## Run locally in Windows PowerShell
 
@@ -25,11 +25,9 @@ Preview the production build locally:
 npm run preview
 ```
 
-## Notes before production
+## Notes
 
 - The contact form is intentionally local-only. It prevents submission and shows local confirmation feedback.
-- Final business contact information, service scope, legal copy, and any public claims must be reviewed before launch.
-- The address and phone number are clearly marked placeholders. The contact email is `hello@auralivingva.com`.
-- No EIN, secrets, backend, production form handling, SMS activation, DNS configuration, hosting configuration, or domain deployment is included.
-- The Privacy Policy and SMS Terms are drafts for review, not legal advice.
-- `public/robots.txt` and `public/sitemap.xml` provide a basic static setup for the intended domain.
+- Official contact details are `info@auralivingva.com`, `+1 703-828-4040`, and `3470 Grambell Ct, Woodbridge, Virginia 22192, USA`.
+- No secrets, backend, production form handling, SMS activation, DNS configuration, hosting configuration, or domain deployment is included.
+- `public/robots.txt` and `public/sitemap.xml` provide a basic static setup for `https://auralivingva.com/`.

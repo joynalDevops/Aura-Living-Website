@@ -3,21 +3,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import { site } from '../data/site';
 ---
-<BaseLayout title="Contact" description="Start a conversation with Aura Living about residential property support in Virginia." path="/contact/">
+<BaseLayout title="Contact" description="Start a conversation with Aura Living LLC about residential and commercial property support in Virginia." path="/contact/">
   <PageHero eyebrow="Contact" title="Tell us what you are planning." intro="Whether you own a property, support residents, or are simply exploring your options, a first conversation is a good place to begin." />
   <section class="section">
     <div class="container contact-grid">
       <div class="contact-detail">
         <h2>We are listening.</h2>
-        <p>Share a little context and we can better understand what would be useful. The details below are placeholders until the business confirms final contact information.</p>
+        <p>Share a little context and we can better understand what would be useful. You can also reach Aura Living LLC directly using the details below.</p>
         <dl class="detail-list">
           <div><dt>Email</dt><dd><a href={`mailto:${site.email}`}>{site.email}</a></dd></div>
-          <div><dt>Phone</dt><dd>{site.phone} <small>(placeholder)</small></dd></div>
-          <div><dt>Service area</dt><dd>{site.serviceArea}</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+17038284040">{site.phone}</a></dd></div>
+          <div><dt>Address</dt><dd>{site.address}</dd></div>
         </dl>
       </div>
       <div class="contact-form">
-        <div class="inquiry-note" role="note">This form stays on this page and does not send messages. To contact Aura Living, use the email address listed here.</div>
+        <div class="inquiry-note" role="note">This form stays on this page and does not send messages. To contact Aura Living LLC, use the email address listed here.</div>
         <form id="inquiry-form">
           <div class="form-grid">
             <div class="form-field"><label for="name">Name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" required /></div>
@@ -26,7 +26,7 @@ import { site } from '../data/site';
             <div class="form-field"><label for="inquiry">I am reaching out as a...</label><select id="inquiry" name="inquiry"><option>Property owner</option><option>Resident</option><option>Prospective client</option><option>Other</option></select></div>
             <div class="form-field full"><label for="message">Message <span aria-hidden="true">*</span></label><textarea id="message" name="message" required></textarea></div>
           </div>
-          <label class="consent" for="sms-consent"><input id="sms-consent" name="sms-consent" type="checkbox" /><span>I agree to receive occasional one-to-one SMS messages from Aura Living about property support. Consent is optional and is not a condition of service. Message and data rates may apply. See the <a href="/sms-terms/">SMS Terms</a>.</span></label>
+          <label class="consent" for="sms-consent"><input id="sms-consent" name="sms-consent" type="checkbox" /><span>I agree to receive occasional one-to-one SMS messages from Aura Living LLC about property support. Consent is optional and is not a condition of service. Message and data rates may apply. See the <a href="/sms-terms/">SMS Terms</a>.</span></label>
           <div class="form-actions"><button class="button" type="submit">Review inquiry</button><span id="form-status" class="form-status" role="status" aria-live="polite"></span></div>
         </form>
       </div>

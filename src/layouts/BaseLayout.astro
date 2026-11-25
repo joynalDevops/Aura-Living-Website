@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { site } from '../data/site';
 import '../styles/global.css';
 
 interface Props {
@@ -10,7 +11,7 @@ interface Props {
 }
 
 const { title, description, path = '/' } = Astro.props;
-const canonical = `https://auralivingva.com${path === '/' ? '/' : path}`;
+const canonical = `${site.url}${path === '/' ? '/' : path}`;
 ---
 <!doctype html>
 <html lang="en">
@@ -19,15 +20,15 @@ const canonical = `https://auralivingva.com${path === '/' ? '/' : path}`;
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#102d3d" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href={site.logo} />
     <link rel="canonical" href={canonical} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Aura Living" />
+    <meta property="og:site_name" content={site.name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content="https://auralivingva.com/visuals/hero-home.svg" />
-    <title>{title} | Aura Living</title>
+    <meta property="og:image" content={`${site.url}/visuals/hero-home.svg`} />
+    <title>{title} | {site.name}</title>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
